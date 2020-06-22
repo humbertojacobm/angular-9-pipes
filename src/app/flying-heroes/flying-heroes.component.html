@@ -7,6 +7,6 @@ New Hero:
        placeholder="hero name"
 >
 <button (click)="reset()">Reset</button>
-<div *ngFor="let hero of heroes">
+<div *ngFor="let hero of (heroes | flyingHeroes)">
   {{hero.name}}
 </div>

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Flyer } from '../heroes.model';
 
 @Component({
   selector: 'app-flying-heroes',
@@ -6,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./flying-heroes.component.css']
 })
 export class FlyingHeroesComponent implements OnInit {
-  public heroes: any[] = [];
+  public heroes: Flyer[] = [];
   private canFly = true;
   constructor() {this.reset(); }
 
@@ -16,8 +17,12 @@ export class FlyingHeroesComponent implements OnInit {
   addHero(name: string){
     name = name.trim();
     if (!name){return;}
-    let hero = {name, canFly: this.canFly};
+    // let hero = {name, canFly: this.canFly};
+    var hero = new Flyer();
+    hero.name= name;
+    hero.canFly=this.canFly;
     this.heroes.push(hero);
+    this.heroes = [...this.heroes];
   }
 
   reset(){
