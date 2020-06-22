@@ -9,6 +9,7 @@ import { HeroBirthday2Component } from './hero-birthday2/hero-birthday2.componen
 import { ExponentialStrengthPipe } from './exponential-strength.pipe';
 import { PowerBoosterComponent } from './power-booster/power-booster.component';
 import { PowerBoostCalculatorComponent } from './power-boost-calculator/power-boost-calculator.component';
+import { FlyingHeroesComponent } from './flying-heroes/flying-heroes.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { PowerBoostCalculatorComponent } from './power-boost-calculator/power-bo
     HeroBirthday2Component,
     ExponentialStrengthPipe,
     PowerBoosterComponent,
-    PowerBoostCalculatorComponent
+    PowerBoostCalculatorComponent,
+    FlyingHeroesComponent
   ],
   imports: [
     BrowserModule,
