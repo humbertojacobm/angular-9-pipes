@@ -13,6 +13,7 @@ import { FlyingHeroesComponent } from './flying-heroes/flying-heroes.component';
 import { FlyingHeroesPipe } from './flying-heroes.pipe';
 import { FlyingHeroesImpurePipe } from './flying-heroes-impure.pipe';
 import { FlyingHeroesImpureComponent } from './flying-heroes-impure/flying-heroes-impure.component';
+import { HeroAsyncMessageComponent } from './hero-async-message/hero-async-message.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { FlyingHeroesImpureComponent } from './flying-heroes-impure/flying-heroe
     FlyingHeroesComponent,
     FlyingHeroesPipe,
     FlyingHeroesImpurePipe,
-    FlyingHeroesImpureComponent
+    FlyingHeroesImpureComponent,
+    HeroAsyncMessageComponent
   ],
   imports: [
     BrowserModule,
