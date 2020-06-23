@@ -11,6 +11,8 @@ import { PowerBoosterComponent } from './power-booster/power-booster.component';
 import { PowerBoostCalculatorComponent } from './power-boost-calculator/power-boost-calculator.component';
 import { FlyingHeroesComponent } from './flying-heroes/flying-heroes.component';
 import { FlyingHeroesPipe } from './flying-heroes.pipe';
+import { FlyingHeroesImpurePipe } from './flying-heroes-impure.pipe';
+import { FlyingHeroesImpureComponent } from './flying-heroes-impure/flying-heroes-impure.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +23,9 @@ import { FlyingHeroesPipe } from './flying-heroes.pipe';
     PowerBoosterComponent,
     PowerBoostCalculatorComponent,
     FlyingHeroesComponent,
-    FlyingHeroesPipe
+    FlyingHeroesPipe,
+    FlyingHeroesImpurePipe,
+    FlyingHeroesImpureComponent
   ],
   imports: [
     BrowserModule,
