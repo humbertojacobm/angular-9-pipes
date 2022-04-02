@@ -115,6 +115,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "angular9Pipes"
+    }
+  },
+  "defaultProject": "angular9Pipes",
+  "cli": {
+    "analytics": "caa1114e-ce9a-40c1-b4b2-3e90c2e01c45"
+  }
 }
